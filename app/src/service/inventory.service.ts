@@ -15,4 +15,13 @@ export class InventoryService {
         }
     }
 
+    async createInventory(inventory: Inventory): Promise<Inventory> {
+        try {
+            const newInventory = new this.inventoryModel(inventory);
+            return await newInventory.save();
+        } catch (error) {
+            throw new InternalServerErrorException(error)
+        }
+    }
+
 }

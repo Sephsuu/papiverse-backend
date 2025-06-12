@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Connection } from 'mongoose';
 import { InventoryModule } from './module/inventory.module';
+import { AnnouncementModule } from './module/announcement.module';
 
 
 @Module({
@@ -20,6 +21,7 @@ import { InventoryModule } from './module/inventory.module';
     }),
 
     InventoryModule,
+    AnnouncementModule
   ],
   controllers: [AppController],
   providers: [AppService],
