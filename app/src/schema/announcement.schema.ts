@@ -1,18 +1,18 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
-@Schema({ collection: "announcement" })
+@Schema({ collection: "papiverse-announcement" })
 export class Announcement extends Document {
     @Prop({ required: true })
     user: number;
 
-    @Prop({ required: true })
+    @Prop({ type: String, required: true })
     content: string;
 
-    @Prop({ required: false })
+    @Prop({ type: [String], required: false })
     announcementImages: string[];
 
-    @Prop({ required: true })
+    @Prop({ type: String, required: true })
     datePosted: string;
 }
 

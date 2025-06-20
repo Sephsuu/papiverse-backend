@@ -1,0 +1,42 @@
+[
+  {
+    "firstName": "Juan",
+    "middleName": "Santos",
+    "lastName": "Dela Cruz",
+    "dateOfBirth": "1990-05-15",
+    "gender": "Male",
+    "branch": "684b8780d9adb567a3cb6d77"
+  },
+  {
+    "firstName": "Maria",
+    "middleName": "Lopez",
+    "lastName": "Reyes",
+    "dateOfBirth": "1988-11-22",
+    "gender": "Female",
+    "branch": "684b8796d9adb567a3cb6d79"
+  },
+  {
+    "firstName": "Carlos",
+    "middleName": "Garcia",
+    "lastName": "Torres",
+    "dateOfBirth": "1995-03-10",
+    "gender": "Male",
+    "branch": "684b879ed9adb567a3cb6d7b"
+  },
+  {
+    "firstName": "Ana",
+    "middleName": "Velasco",
+    "lastName": "Santos",
+    "dateOfBirth": "1992-07-30",
+    "gender": "Female",
+    "branch": "684b87b4d9adb567a3cb6d7d"
+  },
+  {
+    "firstName": "Miguel",
+    "middleName": "Cruz",
+    "lastName": "Fernandez",
+    "dateOfBirth": "1985-12-05",
+    "gender": "Male",
+    "branch": "684b87bed9adb567a3cb6d7f"
+  }
+]

@@ -5,11 +5,12 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { Connection } from 'mongoose';
 import { InventoryModule } from './module/inventory.module';
 import { AnnouncementModule } from './module/announcement.module';
-
+import { BranchModule } from './module/branch.module';
+import { EmployeeModule } from './module/employee.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://josephemanuelbataller:l4SPFmeWYygoRkUA@sephnet.oe3yibi.mongodb.net/?retryWrites=true&w=majority&appName=SephNet/papiverse', {
+    MongooseModule.forRoot('mongodb+srv://josephemanuelbataller:l4SPFmeWYygoRkUA@sephnet.oe3yibi.mongodb.net/?retryWrites=true&w=majority&appName=SephNet', {
       onConnectionCreate: (connection: Connection) => {
         connection.on('connected', () => console.log('MongoDB connected'));
         connection.on('open', () => console.log('MongoDB connection opened'));
@@ -20,8 +21,11 @@ import { AnnouncementModule } from './module/announcement.module';
       },
     }),
 
+    BranchModule,
     InventoryModule,
-    AnnouncementModule
+    AnnouncementModule,
+    EmployeeModule
+
   ],
   controllers: [AppController],
   providers: [AppService],
